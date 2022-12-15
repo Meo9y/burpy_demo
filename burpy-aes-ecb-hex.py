@@ -15,7 +15,7 @@ class Burpy:
         '''
         here goes some code that will be kept since "start server" clicked, for example, webdriver, which usually takes long time to init
         '''
-        self.key = '20a1d32f6fbf5fc0'
+        self.key = 'xxxx'
 
     def main(self, header, body):
         
