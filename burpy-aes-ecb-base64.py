@@ -11,7 +11,7 @@ class Burpy:
 	'''
 
 	def __init__(self):
-		self.key = "3602879701896397"
+		self.key = "xxxxx"
 		self.length = AES.block_size  # 初始化数据块大小
 		self.aes = AES.new(self.key.encode("utf8"), AES.MODE_ECB)  # 初始化AES,ECB模式的实例
 		# 截断函数，去除填充的字符
