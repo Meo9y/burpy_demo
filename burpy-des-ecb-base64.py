@@ -13,8 +13,8 @@ class Burpy:
         '''
         here goes some code that will be kept since "start server" clicked, for example, webdriver, which usually takes long time to init
         '''
-        self.key = 'CSIIZRCb'
-        #self.iv = '01234567'
+        self.key = 'xxxxx'
+        #self.iv = 'xxxxx'
         self.mode = DES.MODE_ECB
 
 
