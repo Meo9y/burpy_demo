@@ -19,8 +19,8 @@ class Burpy:
     '''
 
     def __init__(self):
-        self.key = 'S9u978Q31NGPGc5H'  # 密钥
-        self.iv = "X83yESM9iShLxfwS"  # 偏移量
+        self.key = 'xxxxxxx'  # 密钥
+        self.iv = "xxxxxx"  # 偏移量
         self.BLOCK_SIZE = AES.block_size
         # 不足BLOCK_SIZE的补位(s可能是含中文，而中文字符utf-8编码占3个位置,gbk是2，所以需要以len(s.encode())，而不是len(s)计算补码)
         self.pad = lambda s: s + (self.BLOCK_SIZE - len(s.encode()) % self.BLOCK_SIZE) * chr(
