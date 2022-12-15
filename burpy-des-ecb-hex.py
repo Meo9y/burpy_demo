@@ -15,8 +15,8 @@ class Burpy:
         '''
         here goes some code that will be kept since "start server" clicked, for example, webdriver, which usually takes long time to init
         '''
-        self.key = 'SZBank@9'
-        #self.iv = '01234567'
+        self.key = 'xxxx'
+        #self.iv = 'xxxx'
         self.mode = DES.MODE_ECB
     def _md5(self,str):
         return hashlib.md5(str.encode(encoding='UTF-8')).hexdigest()
