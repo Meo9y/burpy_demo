@@ -31,7 +31,7 @@ class Burpy:
     def _rsadecryption(self,text_encrypted_base64):
     # 字符串指定编码（转为bytes）
         text_encrypted_base64 = text_encrypted_base64.encode('utf-8')
-        private_key = b'-----BEGIN RSA PRIVATE KEY-----\nMIICXAIBAAKBgQCB2kB43bYg4Vmfe9BZQdh+IfcY+O1gt9MrC368w1+gcLHvqfwX\nLnRyil9cYXF8Yjrnqwq3rDEyjqLvBV8NFnFxPjLrLSddoBWVOnbmGDEwDmL6Iwsh\npKzeO8lGKA4FGF3nathLLC5PJDcLA1ep5pSXleglT0aIOmjpWexEy9uT0QIDAQAB\nAoGAASVp6g4OEqpwQWW5oCwP75g4ObxPUYD6cW7JXPw+Dqje2KCZAqPMuUGqoL3w\ncYg5bmD7E3yZI5HZ8xqBbSrTS7aDDfUahCluUQaSMdLal1HV6kafCbahKZktjsma\nEc8qEG0lMX9bA2I2Wf5xDLho233h0hq7EUdSRL0gR1RyLpUCQQCCeanptgmeAx2e\nIJEoyxPb4ORYpRMCW1X/jlnAXTgFP/uUESr/VPvRVEZF6esLRjeMxkPpAIw+n+ai\naC7kkxj9AkEA/sc5gxY8Hi8H7p4SV2OBJa5OhBFp1gqPVts8sGU+Q6XnATGncqAB\nDTztEnFC/fLjxz5eJQACezgUg1GfY9cYZQJAGvTP6f02F3NFVzobQ3ZRcAgSpU3V\nk5MTPW1HlbqsrEj/zSOO4pnIPQNQUXl2mimzqF3+AdGfKAEZQUyNA6RwcQJBAPlO\n9gZCQb2/g+GJqKT+56d5s7ckWw5p8u2pRu/Ngmor86qFbjeKPr03ezzqvAVIIoAb\nlYBbTBJLRDdkLbZDCskCQFbc0Omrzg1guVRwlIB4/+X/SkUzLcpZVArync2O3pVF\n55t2iaCsQEEWmPPrhW5eu8Z7cpgb285a/rQTWVtBFdM=\n-----END RSA PRIVATE KEY-----'
+        private_key = b'-----BEGIN RSA PRIVATE KEY-----\n\n-----END RSA PRIVATE KEY-----'
     # base64解码
         text_encrypted = base64.b64decode(text_encrypted_base64)
     # 构建私钥对象
